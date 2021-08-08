@@ -1,0 +1,22 @@
+{
+  "name": "9.-readme-generator",
+  "version": "1.0.0",
+  "description": "[How to create a Professional README](./readme-guide.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessibewu/readme-generator.git"
+  },
+  "author": "Jessica Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessibewu/readme-generator/issues"
+  },
+  "homepage": "https://github.com/jessibewu/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
