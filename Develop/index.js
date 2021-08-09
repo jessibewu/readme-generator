@@ -1,16 +1,14 @@
 // TODO: Include packages needed for this application
-
-// External Packages:
 const fs = require("fs");
 const util = require("util");
-const inquirer = require('inquirer');
-
-// Internal modules:
-const api = require('./utils/api.js');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const inquirer = require("inquirer");
+const generateReadme = require("./utils/generateMarkdown")
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-const questions = [
+function promptUser(){
+    return inquirer.prompt([
+        //const questions = [
     {
         type: 'input',
         name: 'projectTitle',
@@ -33,19 +31,19 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'contribution',
+        name: 'contributing',
         message: 'Is there contribution guidelines?',
       },
       {
         type: 'input',
-        name: 'testInst',
+        name: 'tests',
         message: 'Is there project test instructions?',
       },
       {
         type: 'list',
         name: 'license',
         message: 'Please choose a license for this application:',
-        choices: ['GNU', 'ISC', 'MIT', 'Mozilla', 'Open', 'SIL Open', 'The Unlicense']
+        choices: ['GNU', 'ISC', 'MIT', 'Mozilla', 'Open Data', 'SIL', 'Unlicense']
       },
       {
         type: 'input',
@@ -57,8 +55,7 @@ const questions = [
         name: 'email',
         message: 'Please enter your email address:',
       },
-];
-
+])};
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -68,31 +65,17 @@ function writeToFile(fileName, data) {
        });
     }
 
-const writeFileAsync = util.promisify(writeToFile);
-
-
 // TODO: Create a function to initialize app
-function init() {
+async function init() {
     try {
-        // Prompt Inquirer questions
-        const userResponses = await inquirer.prompt(questions);
-        console.log("Your responses: ", userResponses);
-        console.log("Thank you for your responses! Fetching your GitHub data next...");
-    
-        // Call GitHub api for user info
-        const userInfo = await api.getUser(userResponses);
-        console.log("Your GitHub user info: ", userInfo);
-    
-        // Pass Inquirer userResponses and GitHub userInfo to generateMarkdown
-        console.log("Generating your README next...")
-        const markdown = generateMarkdown(userResponses, userInfo);
-        console.log(markdown);
-    
-        // Write markdown to file
-        await writeFileAsync('ExampleREADME.md', markdown);
-
-    } catch (error) {
-        console.log(error);
+        // Ask user questions and generate responses
+        const answers = await promptUser();
+        const generateContent = generateReadme(answers);
+        // Write new README.md to dist directory
+        await writeFileAsync('./dist/README.md', generateContent);
+        console.log('Successfully wrote to README.md');
+    }   catch(err) {
+        console.log(err);
     }
 };
 
