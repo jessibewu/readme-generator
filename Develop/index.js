@@ -43,7 +43,7 @@ function promptUser(){
         type: 'list',
         name: 'license',
         message: 'Please choose a license for this application:',
-        choices: ['GNU', 'ISC', 'MIT', 'Mozilla', 'SIL', 'None']
+        choices: ['AGPL-3.0', 'GPL-3.0', 'MIT', 'MPL-2.0', 'Unlicense']
       },
       {
         type: 'input',
@@ -58,12 +58,12 @@ function promptUser(){
 ])};
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
-        if (err) throw err;
-        console.log('README file has been generated!');
-       });
-    }
+// function writeToFile(fileName, data) {
+//     fs.writeFile(fileName, data, err => {
+//         if (err) throw err;
+//         console.log('README file has been generated!');
+//        });
+//     }
 
 // TODO: Create a function to initialize app
 async function init() {
