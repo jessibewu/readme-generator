@@ -2,7 +2,7 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-const generateReadme = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown")
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
@@ -43,7 +43,7 @@ function promptUser(){
         type: 'list',
         name: 'license',
         message: 'Please choose a license for this application:',
-        choices: ['GNU', 'ISC', 'MIT', 'Mozilla', 'Open Data', 'SIL', 'Unlicense']
+        choices: ['GNU', 'ISC', 'MIT', 'Mozilla', 'SIL', 'None']
       },
       {
         type: 'input',
@@ -70,7 +70,7 @@ async function init() {
     try {
         // Ask user questions and generate responses
         const answers = await promptUser();
-        const generateContent = generateReadme(answers);
+        const generateContent = generateMarkdown(answers);
         // Write new README.md to dist directory
         await writeFileAsync('./dist/README.md', generateContent);
         console.log('Successfully wrote to README.md');

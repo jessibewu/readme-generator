@@ -44,7 +44,7 @@ function renderLicenseBadge(license) {
   return `
   ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
   `
-  // if (!answers.license) {
+  // if (answers.license === 'none') {
   //   return false;
   // }
 }
@@ -55,7 +55,7 @@ function renderLicenseLink(license) {
   return `
   [License Link](https://opensource.org/licenses/${answers.license})
   `
-  // if (!answers.license) {
+  // if (answers.license === 'none') {
   //   return false;
   // }
 }
@@ -72,9 +72,9 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-`;
-}
+// function generateMarkdown(data) {
+//   return `# ${data.title}
+// `;
+// }
 
 module.exports = generateMarkdown;
