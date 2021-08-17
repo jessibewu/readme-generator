@@ -1,10 +1,10 @@
 
-  <h1 align="center">ididd</h1>
+  <h1 align="center">idddd</h1>
   
-  [![badge](https://img.shields.io/badge/license-GPL-3.0-brightgreen)](https://shields.io)
+  [![badge](https://img.shields.io/badge/licenses-MPL-2.0-brightgreen)](https://shields.io)
 
   ## Description
-  🔍 ididd
+  🔍 ddd
 
   ## Table of Contents
   - [Description](#description)
@@ -22,7 +22,7 @@
   💻 ddd
   
   ## License
-  This application is covered by [GPL-3.0](https://opensource.org/licenses/GPL-3.0) license. 
+  This application is covered by [MPL-2.0](https://opensource.org/licenses/MPL-2.0) license. 
   
   ## Contributing
   👪 ddd
