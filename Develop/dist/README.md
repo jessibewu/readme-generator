@@ -1,7 +1,7 @@
 
-  <h1 align="center">idddd</h1>
+  <h1 align="center">dd</h1>
   
-  [![badge](https://img.shields.io/badge/licenses-MPL-2.0-brightgreen)](https://shields.io)
+  [![badge](https://img.shields.io/badge/license-PDDL-brightgreen)](https://shields.io)
 
   ## Description
   🔍 ddd
@@ -16,19 +16,19 @@
   - [Questions](#questions)
 
   ## Installation
-  💾 ddd
+  💾 dd
 
   ## Usage
-  💻 ddd
+  💻 dd
   
   ## License
-  This application is covered by [MPL-2.0](https://opensource.org/licenses/MPL-2.0) license. 
+  This application is covered by [PDDL](https://opensource.org/licenses/PDDL) license. 
   
   ## Contributing
-  👪 ddd
+  👪 dd
 
   ## Tests
-  ✏️ ddd
+  ✏️ dd
 
   ## Questions
   :octocat: Find me on GitHub: [](https://github.com/)<br /><br />
