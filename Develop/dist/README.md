@@ -1,10 +1,10 @@
 
-  <h1 align="center">ddd</h1>
+  <h1 align="center">README Generator</h1>
   
-  [![badge](https://img.shields.io/badge/license-Unlicense-brightgreen)](https://shields.io)
+  [![badge](https://img.shields.io/badge/license-MIT-brightgreen)](https://shields.io)
 
   ## Description
-  🔍 ddd
+  🔍 To generate README file based on user inputs.
 
   ## Table of Contents
   - [Description](#description)
@@ -16,22 +16,22 @@
   - [Questions](#questions)
 
   ## Installation
-  💾 ddd
+  💾 npm i
 
   ## Usage
-  💻 ddd
+  💻 none
   
   ## License
-  This application is covered by [Unlicense](https://opensource.org/licenses/Unlicense) license. 
+  This application is covered by [MIT](https://opensource.org/licenses/MIT) license. 
   
   ## Contributing
-  👪 ddd
+  👪 none
 
   ## Tests
-  ✏️ ddd
+  ✏️ none
 
   ## Questions
-  :octocat: Find me on GitHub: [](https://github.com/)<br /><br />
-  ✉️ Email me with any questions:  <br /><br />
+  :octocat: Find me on GitHub: [jessibewu](https://github.com/jessibewu)<br /><br />
+  ✉️ Email me with any questions: jess.wu@outlook.com <br /><br />
 
   

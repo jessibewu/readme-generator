@@ -25,6 +25,10 @@
   ## Usage
   Run the following command at the root of the file and answer the prompted questions to generate a README.md:
   node index.js
+
+  Demo Video:
+
+  ![Professional Readme Generator Demo](./Develop/utils/demo-video.gif)
   
   ## License
   This application is covered by [MIT](https://opensource.org/licenses/MIT) license. 

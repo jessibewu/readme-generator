@@ -1,3 +1,4 @@
+// To generateMarkdown based on user input data if license is selected as 'None'
 function generateMarkdown(data) {
   if (data.license === "None") {
       return `
@@ -33,7 +34,9 @@ function generateMarkdown(data) {
   :octocat: Find me on GitHub: [${data.github}](https://github.com/${data.github})<br /><br />
   ✉️ Email me with any questions: ${data.email} <br /><br />
       `
-  } else{
+  } 
+  // Otherwise, generateMarkdown as below (w/ License):
+  else{
   
     return `
   <h1 align="center">${data.title}</h1>
