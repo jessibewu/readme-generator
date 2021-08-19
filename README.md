@@ -19,16 +19,15 @@
   - [Credits](#credits)
 
   ## Installation
-  npm init
-  npm install inquirer
+  - npm init
+  - npm install inquirer
 
   ## Usage
-  Run the following command at the root of the file and answer the prompted questions to generate a README.md:
-  node index.js
+  Run "node index.js" command at the root of the file and answer the prompted questions to generate a README.md:
 
   Demo Video:
 
-  ![Professional Readme Generator Demo](./Develop/utils/demo-video.gif)
+  ![Professional Readme Generator Demo](./utils/demo-video.gif)
   
   ## License
   This application is covered by [MIT](https://opensource.org/licenses/MIT) license. 
