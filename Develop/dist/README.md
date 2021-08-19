@@ -1,7 +1,7 @@
 
-  <h1 align="center">dd</h1>
+  <h1 align="center">ddd</h1>
   
-  [![badge](https://img.shields.io/badge/license-PDDL-brightgreen)](https://shields.io)
+  [![badge](https://img.shields.io/badge/license-Unlicense-brightgreen)](https://shields.io)
 
   ## Description
   🔍 ddd
@@ -16,19 +16,19 @@
   - [Questions](#questions)
 
   ## Installation
-  💾 dd
+  💾 ddd
 
   ## Usage
-  💻 dd
+  💻 ddd
   
   ## License
-  This application is covered by [PDDL](https://opensource.org/licenses/PDDL) license. 
+  This application is covered by [Unlicense](https://opensource.org/licenses/Unlicense) license. 
   
   ## Contributing
-  👪 dd
+  👪 ddd
 
   ## Tests
-  ✏️ dd
+  ✏️ ddd
 
   ## Questions
   :octocat: Find me on GitHub: [](https://github.com/)<br /><br />

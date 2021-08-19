@@ -39,7 +39,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What kind of license should your project have?',
-        choices: ['ISC', 'MIT', 'PDDL', 'Unlicense', 'None']
+        choices: ['ISC', 'MIT', 'Unlicense', 'None']
       },
       {
         type: 'input',
