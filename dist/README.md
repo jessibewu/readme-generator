@@ -19,16 +19,16 @@
   💾 npm i
 
   ## Usage
-  💻 none
+  💻 It's made from something fun.
   
   ## License
   This application is covered by [MIT](https://opensource.org/licenses/MIT) license. 
   
   ## Contributing
-  👪 none
+  👪 Email me for details.
 
   ## Tests
-  ✏️ none
+  ✏️ N/A
 
   ## Questions
   :octocat: Find me on GitHub: [jessibewu](https://github.com/jessibewu)<br /><br />
